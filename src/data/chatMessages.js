@@ -1,0 +1,76 @@
+export const chatMessages = [
+  {
+    id: 1,
+    sender: "mentor",
+    senderName: "Ananya Krishnan",
+    text: "Hi! Welcome to the chat. I'm here to help with your React performance questions.",
+    time: "10:02 AM",
+    date: "Today",
+  },
+  {
+    id: 2,
+    sender: "user",
+    senderName: "You",
+    text: "Hi Ananya! I'm working on reducing re-renders in my React app. Any tips?",
+    time: "10:03 AM",
+    date: "Today",
+  },
+  {
+    id: 3,
+    sender: "mentor",
+    senderName: "Ananya Krishnan",
+    text: "Sure! Start by wrapping expensive components with React.memo and use useCallback for functions passed as props. Also check if you're using useMemo for expensive calculations.",
+    time: "10:04 AM",
+    date: "Today",
+  },
+  {
+    id: 4,
+    sender: "mentor",
+    senderName: "Ananya Krishnan",
+    text: "If you share a CodeSandbox link I can review it live during our session.",
+    time: "10:05 AM",
+    date: "Today",
+  },
+];
+
+export const chatConversations = [
+  {
+    id: 1,
+    mentorId: 1,
+    mentorName: "Ananya Krishnan",
+    mentorPhoto: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
+    lastMessage: "If you share a CodeSandbox link I can review it live during our session.",
+    lastTime: "10:05 AM",
+    unread: 0,
+    messages: chatMessages,
+  },
+  {
+    id: 2,
+    mentorId: 4,
+    mentorName: "Siddharth Rao",
+    mentorPhoto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
+    lastMessage: "Great! The project structure looks solid. Ship it.",
+    lastTime: "Yesterday",
+    unread: 2,
+    messages: [
+      { id: 1, sender: "user", senderName: "You", text: "Hey, can you review my full-stack project structure?", time: "Yesterday", date: "Yesterday" },
+      { id: 2, sender: "mentor", senderName: "Siddharth Rao", text: "Sure, send me the repo link.", time: "Yesterday", date: "Yesterday" },
+      { id: 3, sender: "user", senderName: "You", text: "Here it is: github.com/you/project", time: "Yesterday", date: "Yesterday" },
+      { id: 4, sender: "mentor", senderName: "Siddharth Rao", text: "Great! The project structure looks solid. Ship it.", time: "Yesterday", date: "Yesterday" },
+    ],
+  },
+  {
+    id: 3,
+    mentorId: 2,
+    mentorName: "Rohan Desai",
+    mentorPhoto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+    lastMessage: "Let's review your model evaluation metrics in the next session.",
+    lastTime: "2 days ago",
+    unread: 0,
+    messages: [
+      { id: 1, sender: "mentor", senderName: "Rohan Desai", text: "Your last model had good precision but recall was low.", time: "2 days ago", date: "2 days ago" },
+      { id: 2, sender: "user", senderName: "You", text: "Thanks! I'll focus on the confusion matrix.", time: "2 days ago", date: "2 days ago" },
+      { id: 3, sender: "mentor", senderName: "Rohan Desai", text: "Let's review your model evaluation metrics in the next session.", time: "2 days ago", date: "2 days ago" },
+    ],
+  },
+];
