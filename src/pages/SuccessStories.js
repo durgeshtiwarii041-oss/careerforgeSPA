@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { ArrowLeft, Star, Quote, TrendingUp, Filter, X } from "lucide-react";
-import { useApp } from "../context/AppContext";
+import { Quote } from "lucide-react";
 import { successStories, successStats } from "../data/successStories";
 
 const DOMAINS = ["All", "Engineering", "Data Science", "Product", "Design", "Business", "Leadership"];

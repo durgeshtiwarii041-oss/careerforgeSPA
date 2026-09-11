@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Send, X, MessageSquare, Paperclip, Smile } from "lucide-react";
+import { Send, X, Paperclip, Smile } from "lucide-react";
 
 export default function ChatWindow({ conversation, onClose, onSend }) {
   const [messages, setMessages] = useState(conversation.messages);

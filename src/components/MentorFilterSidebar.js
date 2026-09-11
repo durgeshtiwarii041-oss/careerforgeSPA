@@ -1,5 +1,5 @@
 import React from "react";
-import { X, ChevronDown, ChevronUp, Star } from "lucide-react";
+import { X, ChevronDown, ChevronUp } from "lucide-react";
 import { mentors } from "../data/mentors";
 
 const DOMAINS = ["Engineering", "Data Science", "Product", "Design", "Business"];

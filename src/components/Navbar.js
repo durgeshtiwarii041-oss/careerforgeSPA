@@ -18,7 +18,7 @@ const moreLinks = [
 ];
 
 export default function Navbar() {
-  const { navigate, currentPage, setModalOpen, chatOpen, setChatOpen, chatConversations } = useApp();
+  const { navigate, currentPage, setModalOpen, setChatOpen, chatConversations } = useApp();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
 

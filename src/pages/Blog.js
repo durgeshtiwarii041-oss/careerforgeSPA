@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { ArrowLeft, Calendar, Clock, User, Search, X, BookOpen, Tag } from "lucide-react";
-import { useApp } from "../context/AppContext";
+import { ArrowLeft, Calendar, Clock, Search, X, BookOpen, Tag } from "lucide-react";
 import { blogs, blogCategories, blogStats } from "../data/blogs";
 
 export default function Blog() {

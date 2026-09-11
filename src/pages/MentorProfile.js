@@ -9,10 +9,8 @@ const mockReviews = [
 ];
 
 export default function MentorProfile() {
-  const { selectedMentor: mentor, navigate, setModalOpen, setChatOpen, chatConversations } = useApp();
+  const { selectedMentor: mentor, navigate, setModalOpen, setChatOpen } = useApp();
   if (!mentor) return <div className="text-center py-20 text-slate-400">Mentor not found. <button onClick={() => navigate("mentors")} className="text-blue-600">Browse mentors</button></div>;
-
-  const conv = chatConversations.find(c => c.mentorId === mentor.id);
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
