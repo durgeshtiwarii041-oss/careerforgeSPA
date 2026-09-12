@@ -1,6 +1,7 @@
 import React from "react";
-import { Zap, Mail, Globe, Rss, Code2 } from "lucide-react";
+import { Mail, Phone, Globe, Rss, Code2 } from "lucide-react";
 import { useApp } from "../context/AppContext";
+import BrandLogo from "./BrandLogo";
 
 const footerLinks = {
   "Learn": [
@@ -44,11 +45,10 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300 mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-10">
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <button onClick={() => navigate("home")} className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center"><Zap size={18} className="text-white" /></div>
-              <span className="text-xl font-bold text-white">Career<span className="text-blue-400">Forge</span></span>
+              <BrandLogo dark />
             </button>
             <p className="text-sm text-slate-400 mb-4 leading-relaxed">Learn skills, get mentored, and become job ready. Your complete career development platform.</p>
             <div className="flex gap-3">
@@ -73,6 +73,23 @@ export default function Footer() {
               </ul>
             </div>
           ))}
+          <div>
+            <h4 className="font-semibold text-white mb-3 text-sm">Contact</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="tel:8858498822" className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors">
+                  <Phone size={14} />
+                  8858498822
+                </a>
+              </li>
+              <li>
+                <a href="mailto:academy@crazywebdev.com" className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors break-all">
+                  <Mail size={14} className="shrink-0" />
+                  academy@crazywebdev.com
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-sm text-slate-500">© 2024 CareerForge. All rights reserved. Frontend-only demo platform.</p>
